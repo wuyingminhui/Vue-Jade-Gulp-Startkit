@@ -3,6 +3,7 @@ extends layout/default.jade
 block head  
   title 优拜出行
   +css("/css/index.css")
+  +css("/vendor/js/animate.css")
 
 block body
   #app.app(v-cloak)
@@ -46,12 +47,12 @@ block body
         .space1
         .tabcontent(v-if="tab==1", :style="{'background-color': 'transparent'}")
           .home(:style="{'max-width': imgwidth + 'px'}")
-            .slide_c1
-              img(src='../img/slide_1.jpg', :style="{'max-width': imgwidth  + 'px'}")
-            .slide_c2
-              img(src='../img/slide_2.jpg', :style="{'max-width': (imgwidth - 100) + 'px'}")
-            .slide_c3
-              img(src='../img/slide_3.jpg', :style="{'max-width': (imgwidth - 200) + 'px'}")
+            .slide_line.slide_c1
+              img(src='../img/slide_1.jpg')
+            .slide_line.slide_c2
+              img(src='../img/slide_2.jpg')
+            .slide_line.slide_c3
+              img(src='../img/slide_3.jpg')
         .tabcontent(v-if="tab==2")
           .about
             .title
@@ -116,9 +117,26 @@ block body
                   img.qrimg(src='../img/qr1.png')
                 .qrblock_right
                   img.qrimg(src='../img/qr2.png')
-            .phone 优拜是一款专注于为用户提供短途出行解决方案的互联网产品，用户可以用微信、APP进行自行车查找，解锁使用，使用完成后直接将车锁关闭即可，操作简单且收费低廉。拥有近百年自行车工艺制造的永久自行车厂结合用户使用场景，为优拜的车体方案提供研发、设计和生产。精益求精，我们的每一点努力，只为保证您的每一次安全舒适出行体验。
+            .phone(style='margin:100px 100px 100px 0px')
+              .swiper-container
+                .swiper-wrapper
+                  .swiper-slide 
+                    img(src='../img/lb1.jpg').imgsc 
+                  .swiper-slide 
+                    img(src='../img/lb2.jpg').imgsc 
+                  .swiper-slide 
+                    img(src='../img/lb3.jpg').imgsc 
+                .swiper-pagination
         .space
+
+
       .space(:style="{'min-width': singlew}")
+    .foot 
+      p 上海轺(yáo)辂(lù)信息科技有限公司 联系电话：021-6251-9808
+      p 地址：上海市长宁区长宁路1027号兆丰广场大厦24楼1-3
+      p © 2016 Shanghai yaolu Technology Co.,Ltd.
+      p 备案许可证号:沪ICP备16039354号
 
 block js
   +js("/js/index.js")
+  +js("/vendor/js/endAnimate.js")

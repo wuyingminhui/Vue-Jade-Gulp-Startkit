@@ -125,36 +125,10 @@
     height: 100%
     width: 100%
 
-
-.slide_c1
-  position: absolute
-  z-index: 100
-  img
-    width: auto
-    background-size: cover
-    box-shadow: 0px 0px 5px rgba(0,20,20,0.6)
-
-.slide_c2
-  position: absolute
-  top: 100px
-  left: 100px
-  opacity: 0.8
-  z-index: 80
-  img
-    width: auto
-    background-size: cover
-    box-shadow: 0px 0px 5px rgba(0,20,20,0.6)
-
-.slide_c3
-  position: absolute
-  top: 200px
-  left: 150px
-  opacity: 0.5
-  z-index: 50
-  img
-    width: auto
-    background-size: cover
-    box-shadow: 0px 0px 5px rgba(0,20,20,0.6)
+.mybutton
+  position:absolute;
+  z-index: 99
+  background-color: #fff
 
 .about
   display: flex
@@ -268,4 +242,108 @@
   height: 100%
   .logo
     height: 100px
+
+
+.animation_c1
+  animation-name: move0;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-play-state: running;
+
+.animation_c2
+  animation-name: move1;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-play-state: running;
+
+.animation_c3
+  animation-name: move2;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-play-state: running;
+
+.slide_c1
+  position: absolute
+  z-index: 80
+  img
+    width: 100%
+    background-size: cover
+    box-shadow: 0px 0px 5px rgba(0,20,20,0.6)
+
+.slide_c2
+  position: absolute
+  margin-top: 100px;
+  -webkit-bottom: 20px
+  left: 100px
+  right: 50px
+  opacity: 0.8
+  z-index: 60
+  img
+    width: 100%
+    background-size: cover
+    box-shadow: 0px 0px 5px rgba(0,20,20,0.6)
+
+.slide_c3
+  position: absolute
+  margin-top: 200px;
+  -webkit-bottom: 0px
+  left: 150px
+  right: 100px
+  opacity: 0.5
+  z-index: 50
+  img
+    width: 100%
+    background-size: cover
+    box-shadow: 0px 0px 5px rgba(0,20,20,0.6)
+
+@keyframes move0 {
+  0%{left:50px;right:0px;z-index:80;margin-top:0px}
+  50%{left:100pxx;right:50px;z-index:65;margin-top:100px}
+  100%{left:150px;right:100px;z-index:50;margin-top:200px}
+}
   
+@keyframes move1 {
+  0%{left:100px;right:50px;z-index:50;margin-top:100px}
+  50%{left:75px;right:25px;z-index:65;margin-top:50px}
+  100%{left:50px;right:0px;z-index:80;margin-top:0px}
+}
+
+@keyframes move2 {
+  0%{left:150px;right:100px;z-index:50;margin-top:200px}
+  50%{left:125px;right:75px;z-index:55;margin-top:150px}
+  100%{left:100px;right:50px;z-index:60;margin-top:100px}
+}
+
+.foot
+  margin-top: -90px
+  clear:both;
+  position:relative
+  text-align: center
+  font-size: 10px
+  line-height: 15px
+  color: #fff
+  opacity: 0.5
+  padding:20px 0px 1px 0px;
+
+.swiper-container
+  width: 100%
+  height: 100%
+
+.swiper-wrapper
+  width: 0px
+
+
+.swiper-slide
+  display: flex
+  text-align: left
+  align-items: center
+  justify-content: center
+
+.imgsc
+  width: 150px
