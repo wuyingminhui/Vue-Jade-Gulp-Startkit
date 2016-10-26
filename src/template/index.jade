@@ -141,8 +141,8 @@ block body
       .header
         .logo
           img(src='../img/ubike_logo.png').mylogo
-        .menu 
-          .title {{defaultM}}
+        .menu
+          .title(@click='showMenu()') {{defaultM}}
           .logo2(@click='showMenu()') 〉
         .myMenu(v-show="showM")
           .title
