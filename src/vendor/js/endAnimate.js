@@ -70,7 +70,6 @@
             setTimeout(hand,duration);
         };
         WN.addAnimEvent=function(elem,fn){
-            console.log(animationEnd)
             elem.addEventListener(animationEnd,fn,false)
         };
   
