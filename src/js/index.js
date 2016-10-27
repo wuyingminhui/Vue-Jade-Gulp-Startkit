@@ -107,26 +107,26 @@ vm.si = setInterval(changeSlide, 7000)
 function changeSlide () {
   if (vm.isMobile) {
     $('.slide_line1').each(function () {
-      if ($(this).hasClass('slide_c1')) {
-        $(this).attr('id', 'slide_c1')
-        $(this).addClass('animation_c1')
+      if ($(this).hasClass('m_slide_c1')) {
+        $(this).attr('id', 'm_slide_c1')
+        $(this).addClass('m_animation_c1')
 
-        WN.removeAnimEvent($('#slide_c1').get(0), myendcallback)
-        WN.addAnimEvent($('#slide_c1').get(0), myendcallback)
+        WN.removeAnimEvent($('#m_slide_c1').get(0), myendcallback_m)
+        WN.addAnimEvent($('#m_slide_c1').get(0), myendcallback_m)
       }
-      if ($(this).hasClass('slide_c2')) {
-        $(this).attr('id', 'slide_c2')
-        $(this).addClass('animation_c2')
+      if ($(this).hasClass('m_slide_c2')) {
+        $(this).attr('id', 'm_slide_c2')
+        $(this).addClass('m_animation_c2')
 
-        WN.removeAnimEvent($('#slide_c2').get(0), myendcallback1)
-        WN.addAnimEvent($('#slide_c2').get(0), myendcallback1)
+        WN.removeAnimEvent($('#m_slide_c2').get(0), myendcallback1_m)
+        WN.addAnimEvent($('#m_slide_c2').get(0), myendcallback1_m)
       }
-      if ($(this).hasClass('slide_c3')) {
-        $(this).attr('id', 'slide_c3')
-        $(this).addClass('animation_c3')
+      if ($(this).hasClass('m_slide_c3')) {
+        $(this).attr('id', 'm_slide_c3')
+        $(this).addClass('m_animation_c3')
 
-        WN.removeAnimEvent($('#slide_c3').get(0), myendcallback2)
-        WN.addAnimEvent($('#slide_c3').get(0), myendcallback2)
+        WN.removeAnimEvent($('#m_slide_c3').get(0), myendcallback2_m)
+        WN.addAnimEvent($('#m_slide_c3').get(0), myendcallback2_m)
       }
     })
   } else {
@@ -172,6 +172,24 @@ function myendcallback2 () {
   $('#slide_c3').removeClass('slide_c3')
   $('#slide_c3').addClass('slide_c2')
   $('#slide_c3').removeClass('animation_c3')
+}
+
+function myendcallback_m () {
+  $('#m_slide_c1').removeClass('m_slide_c1')
+  $('#m_slide_c1').addClass('m_slide_c3')
+  $('#m_slide_c1').removeClass('m_animation_c1')
+}
+
+function myendcallback1_m () {
+  $('#m_slide_c2').removeClass('m_slide_c2')
+  $('#m_slide_c2').addClass('m_slide_c1')
+  $('#m_slide_c2').removeClass('m_animation_c2')
+}
+
+function myendcallback2_m () {
+  $('#m_slide_c3').removeClass('m_slide_c3')
+  $('#m_slide_c3').addClass('m_slide_c2')
+  $('#m_slide_c3').removeClass('m_animation_c3')
 }
 
 function initSwiper () {

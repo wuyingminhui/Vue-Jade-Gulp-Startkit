@@ -34,7 +34,7 @@
         transform: rotate(90deg)
 
 .bg1
-  margin-top: -1px;
+  margin-top: -2px;
   width: 100%;
   min-height: 100%
   height: auto;
@@ -256,9 +256,9 @@
     flex-direction: column
   .content
     width: 85%
-    font-size: 20px
+    font-size: 18px
     color: #fff
-    font-weight: 500
+    font-weight: 400
     text-align: left
     margin: auto
     cursor: pointer
@@ -463,7 +463,7 @@
   img
     width: 100%
     background-size: cover
-    box-shadow: 0px 0px 5px rgba(0,20,20,0.6)
+    box-shadow: 20px 10px 15px rgba(0,20,20,0.8)
 
 .slide_c2
   position: absolute
@@ -476,7 +476,7 @@
   img
     width: 100%
     background-size: cover
-    box-shadow: 0px 0px 5px rgba(0,20,20,0.6)
+    box-shadow: 20px 10px 15px rgba(0,20,20,0.8)
 
 .slide_c3
   position: absolute
@@ -489,11 +489,90 @@
   img
     width: 100%
     background-size: cover
-    box-shadow: 0px 0px 5px rgba(0,20,20,0.6)
+    box-shadow: 20px 10px 15px rgba(0,20,20,0.6)
+
+
+.m_slide_c1
+  position: absolute
+  z-index: 80
+  left: 8px
+  right: 8px
+  img
+    width: 100%
+    background-size: cover
+    box-shadow: 20px 10px 15px rgba(0,20,20,0.8)
+
+.m_slide_c2
+  position: absolute
+  margin-top: 75px;
+  left: 50px
+  right: 50px
+  opacity: 0.8
+  z-index: 60
+  img
+    width: 100%
+    background-size: cover
+    box-shadow: 20px 10px 15px rgba(0,20,20,0.8)
+
+.m_slide_c3
+  position: absolute
+  margin-top: 160px;
+  left: 100px
+  right: 100px
+  opacity: 0.5
+  z-index: 50
+  img
+    width: 100%
+    background-size: cover
+    box-shadow: 20px 10px 15px rgba(0,20,20,0.6)
+
+@keyframes m_move0 {
+  0%{left:8px;right:8px;z-index:80;margin-top:0px}
+  50%{left:54px;right:54px;z-index:65;margin-top:75px}
+  100%{left:100px;right:100px;z-index:50;margin-top:160px}
+}
+  
+@keyframes m_move1 {
+  0%{left:50px;right:50px;z-index:50;margin-top:75px}
+  50%{left:29px;right:29px;z-index:65;margin-top:37px}
+  100%{left:8px;right:8px;z-index:80;margin-top:0px}
+}
+
+@keyframes m_move2 {
+  0%{left:100px;right:100px;z-index:50;margin-top:160px}
+  50%{left:75px;right:75px;z-index:55;margin-top:118px}
+  100%{left:50px;right:50px;z-index:60;margin-top:75px}
+}
+
+.m_animation_c1
+  animation-name: m_move0;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-play-state: running;
+
+.m_animation_c2
+  animation-name: m_move1;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-play-state: running;
+
+.m_animation_c3
+  animation-name: m_move2;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-play-state: running;
+
+
 
 @keyframes move0 {
   0%{left:50px;right:0px;z-index:80;margin-top:0px}
-  50%{left:100pxx;right:50px;z-index:65;margin-top:100px}
+  50%{left:100px;right:50px;z-index:65;margin-top:100px}
   100%{left:150px;right:100px;z-index:50;margin-top:200px}
 }
   
