@@ -91,10 +91,12 @@
 
 .mobile_container
   display: flex
+  width: 100%
   .s_line
     flex: 1
   .c_c
     flex: 20
+    width: 100%
     display: flex
     flex-direction: column
     .c_c_c
@@ -165,14 +167,16 @@
       display: flex
       padding: 5px 10px 10px 10px
       background-color: rgba(255,255,255,0.6)
-      .qrbg
-        flex: 1
-        width: 20%
-        height: 100%
-        margin: 10px 5px
-        border-radius: 15px
-        background-color: rgba(232,232,232,1)
+      .qrb
+        width: 50%
+        .qrbg1
+          width: 90%
+          margin: 10px 5px
+          border-radius: 15px
+          background-color: rgba(232,232,232,1)
     .slide_slide
+      width: inherit
+      flex: 1
       background-color: #fff
       opacity: 0.6
       padding: 20px 0px
@@ -535,10 +539,9 @@
 .swiper-wrapper
   width: 0px
 
-
 .swiper-slide
   display: flex
-  text-align: left
+  text-align: center
   align-items: center
   justify-content: center
 
@@ -548,3 +551,4 @@
 
 .imgsc
   width: 150px
+  height: auto

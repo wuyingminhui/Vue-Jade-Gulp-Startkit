@@ -127,7 +127,7 @@ block body
                   .swiper-slide 
                     img(src='../img/lb3.jpg').imgsc 
                 .swiper-pagination
-        .space
+        .space_footer
 
 
       .space(:style="{'min-width': singlew}")
@@ -180,15 +180,17 @@ block body
             img(src='../img/bg_2.png').bgend1
           .space_footer
         .c_c(v-show="tab==3")
-          .c_c_c
+          #slice_ccc.c_c_c
             .title(:style='{flex: 1}')
               .big 下载优拜单车App
               .small Download App
             .txt(:style='{flex: 1}')
           .bg_qr
-            img(src='../img/qr1.png').qrbg
-            img(src='../img/qr2.png').qrbg
-          .slide_slide
+            .qrb
+              img(src='../img/qr1.png').qrbg1
+            .qrb
+              img(src='../img/qr2.png').qrbg1
+          .slide_slide(:style="{'max-width': slide_width}")
             .swiper-container
               .swiper-wrapper
                 .swiper-slide 

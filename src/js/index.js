@@ -13,6 +13,7 @@ var vm = new Vue({
     singlew: '100px',
     c_height: '0px',
     showM: false,
+    slide_width: '375px',
     imgwidth: '1000px',
     imgheight: '1000px'
   },
@@ -32,6 +33,7 @@ var vm = new Vue({
 
     this.bgwidth = winWidth + 'px'
     this.allwidth = winWidth + 'px'
+    this.slide_width = (winWidth - 20) + 'px'
     this.height = winHeight + 'px'
     this.c_height = (winHeight - 100) + 'px'
     this.width = (winWidth * 5 / 6) + 'px'
