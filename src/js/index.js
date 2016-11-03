@@ -1,3 +1,5 @@
+// var carousel = require('./carousel')
+
 var vm = new Vue({
   el: '#app',
   data: {
@@ -16,6 +18,9 @@ var vm = new Vue({
     slide_width: '375px',
     imgwidth: '1000px',
     imgheight: '1000px'
+  },
+  components: {
+    // 'main-carousel': carousel
   },
   created: function () {
     var winHeight

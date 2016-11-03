@@ -6,6 +6,7 @@ block head
   +css("/vendor/js/animate.css")
 
 block body
+  main-carousel
   #app.app(v-cloak)
     .bg(:style="{'display': (isMobile?'none':'')}")
       .space(:style="{'min-width': singlew}")
@@ -104,7 +105,7 @@ block body
                   p 3. 负责微信等平台活动方案策划、创意、执行、运营及汇报和总结；
                   p 4. 调研目标用户喜好，在此基础规划微信内容编辑和发布计划，增加粉丝量，提高的活跃度；
                   p 5. 负责分析用户需求，策划能打动用户的新闻及热点资讯，独立撰写相关新闻稿
-          .to 简历请投递 yi.yu@ubike.cn
+          .to 简历请投递 hr@ubike.cn
         .tabcontent(v-if="tab==3")
           .about
             .logo
@@ -114,9 +115,7 @@ block body
                 p.small DOWNLOAD APP
               .qrarea
                 .qrblock_left
-                  img.qrimg(src='../img/qr1.png')
                 .qrblock_right
-                  img.qrimg(src='../img/qr2.png')
             .phone(style='margin:100px 100px 100px 0px')
               #myswiper.swiper-container(v-my-directive='start')
                 .swiper-wrapper
@@ -164,11 +163,9 @@ block body
           .block(style='background-color: rgba(0,0,0,0.34); padding: 0px')
             .qrblock
               .qrsingle
-                img(src='../img/qr1.png').qrbg
               .qrsingle
-                img(src='../img/qr2.png').qrbg
+                img(src='../img/qr_wx.png').qrbg
               .qrsingle
-                img(src='../img/qr1.png').qrbg
           .space_footer
         .c_c(v-show="tab==2")
           .c_c_c
@@ -187,9 +184,9 @@ block body
             .txt(:style='{flex: 1}')
           .bg_qr
             .qrb
-              img(src='../img/qr1.png').qrbg1
+              
             .qrb
-              img(src='../img/qr2.png').qrbg1
+              
           .slide_slide(:style="{'max-width': slide_width}")
             .swiper-container
               .swiper-wrapper
@@ -246,7 +243,7 @@ block body
                 p 3. 负责微信等平台活动方案策划、创意、执行、运营及汇报和总结；
                 p 4. 调研目标用户喜好，在此基础规划微信内容编辑和发布计划，增加粉丝量，提高的活跃度；
                 p 5. 负责分析用户需求，策划能打动用户的新闻及热点资讯，独立撰写相关新闻稿
-          .to1 简历请投递 yi.yu@ubike.cn
+          .to1 简历请投递 hr@ubike.cn
           .space_footer
         .s_line
     .footer1(:style="{'display': (isMobile?'':'none')}")
