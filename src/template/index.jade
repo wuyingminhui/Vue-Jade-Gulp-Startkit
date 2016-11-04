@@ -41,7 +41,7 @@ block body
               .dot(:style="{'background-color': (tab==4?'#fd9200':'#fff')}")
               .line-bottom-top
           a(@click='tabpage(4)', :style="{'color': (tab==4?'#fd9200':'#fff')}").content JOIN US
-        .qrcode(style='border-top-left-radius: 5px; border-top-right-radius: 5px;')
+        .qrcode(style='border-top-left-radius: 5px; border-top-right-radius: 5px;border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;')
           img(src='../img/qr_wx.png').qr_bg
         .qrcode(style='visibility: hidden;')
           img(src='../img/qr_wx.png').qr_bg
