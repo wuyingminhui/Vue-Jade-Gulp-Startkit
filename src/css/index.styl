@@ -202,7 +202,8 @@
   flex: 3
   position: fixed
   left: 10%
-  height: 500px;
+  min-height: 100%
+  padding-bottom: 50px
   min-width: 200px
   font-size: 13px
   display: flex
@@ -426,6 +427,21 @@
 
 .qrcode
   flex: 1
+  text-align: center
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0px 30px
+  background-color: rgba(0,0,0,0.34)
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.15)
+  &:first-child
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  &:last-child
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  .qr_bg
+    max-height: 90px
 
 .download
   display: flex
