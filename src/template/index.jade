@@ -17,30 +17,30 @@ block body
           .col.stream.flex-row-center
             .line.flex-col-center
               .line-first-top
-              .dot(:style="{'background-color': (tab==1?'#fd9200':'#fff')}")
+              .dot(:style="{'background-color': (tab==1?'#00e587':'#fff')}")
               .line-bottom
-          a(@click='tabpage(1)', :style="{'color': (tab==1?'#fd9200':'#fff')}").content HOME
+          a(@click='tabpage(1)', :style="{'color': (tab==1?'#00e587':'#fff')}").content HOME
         .row.flex-row-between
           .col.stream.flex-row-center
             .line.flex-col-center
               .line-top
-              .dot(:style="{'background-color': (tab==2?'#fd9200':'#fff')}")
+              .dot(:style="{'background-color': (tab==2?'#00e587':'#fff')}")
               .line-bottom
-          a(@click='tabpage(2)', :style="{'color': (tab==2?'#fd9200':'#fff')}").content ABOUT US
+          a(@click='tabpage(2)', :style="{'color': (tab==2?'#00e587':'#fff')}").content ABOUT US
         .row.flex-row-between
           .col.stream.flex-row-center
             .line.flex-col-center
               .line-top
-              .dot(:style="{'background-color': (tab==3?'#fd9200':'#fff')}")
+              .dot(:style="{'background-color': (tab==3?'#00e587':'#fff')}")
               .line-bottom
-          a(@click='tabpage(3)', :style="{'color': (tab==3?'#fd9200':'#fff')}").content DOWNLOAD APP
+          a(@click='tabpage(3)', :style="{'color': (tab==3?'#00e587':'#fff')}").content DOWNLOAD APP
         .row.flex-row-between
           .col.stream.flex-row-center
             .line.flex-col-center
               .line-top
-              .dot(:style="{'background-color': (tab==4?'#fd9200':'#fff')}")
+              .dot(:style="{'background-color': (tab==4?'#00e587':'#fff')}")
               .line-bottom-top
-          a(@click='tabpage(4)', :style="{'color': (tab==4?'#fd9200':'#fff')}").content JOIN US
+          a(@click='tabpage(4)', :style="{'color': (tab==4?'#00e587':'#fff')}").content JOIN US
         .qrcode(style='border-top-left-radius: 5px; border-top-right-radius: 5px;border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;')
           img(src='../img/qr_wx.png').qr_bg
         .qrcode(style='visibility: hidden;')
@@ -113,7 +113,7 @@ block body
           .about
             .logo
               .imglogo
-                img.ulogo(src='../img/logo_1.png')
+                img.ulogo(src='../img/ubike_logo.png')
               .downloadline 下载优拜单车App
                 p.small DOWNLOAD APP
               .qrarea
