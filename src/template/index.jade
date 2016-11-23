@@ -43,8 +43,8 @@ block body
           a(@click='tabpage(4)', :style="{'color': (tab==4?'#00e587':'#fff')}").content JOIN US
         .qrcode(style='border-top-left-radius: 5px; border-top-right-radius: 5px;border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;')
           img(src='../img/qr_wx.png').qr_bg
-        .qrcode(style='visibility: hidden;')
-          img(src='../img/qr_wx.png').qr_bg
+        .qrcode
+          img(src='../img/qr_apple.png').qr_bg
         .qrcode(style='visibility: hidden;')
           img(src='../img/qr_wx.png').qr_bg
       .tab(:style="{'min-height': height, 'min-width': width}")
@@ -166,9 +166,9 @@ block body
           .block(style='background-color: rgba(0,0,0,0.34); padding: 0px')
             .qrblock
               .qrsingle
-              .qrsingle
                 img(src='../img/qr_wx.png').qrbg
               .qrsingle
+                img(src='../img/qr_apple.png').qrbg
           .space_footer
         .c_c(v-show="tab==2")
           .c_c_c
