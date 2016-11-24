@@ -45,8 +45,9 @@ block body
           img(src='../img/qr_wx.png').qr_bg
         .qrcode
           img(src='../img/qr_apple.png').qr_bg
-        .qrcode(style='visibility: hidden;')
-          img(src='../img/qr_wx.png').qr_bg
+        .linkebutton
+          a.singlea(href="http://itunes.apple.com/cn/app/id1164316066?mt=8")
+            img.singlelink(src='../img/iOS.png')
       .tab(:style="{'min-height': height, 'min-width': width}")
         .space1
         .tabcontent(v-if="tab==1", :style="{'background-color': 'transparent'}")
