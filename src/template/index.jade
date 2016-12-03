@@ -45,9 +45,13 @@ block body
           img(src='../img/qr_wx.png').qr_bg
         .qrcode
           img(src='../img/qr_apple.png').qr_bg
+        .qrcode
+          img(src='../img/qr_android.png').qr_bg
         .linkebutton
           a.singlea(href="http://itunes.apple.com/cn/app/id1164316066?mt=8")
             img.singlelink(src='../img/iOS.png')
+          a.singlea(href="http://ubike-bucket.oss-cn-shanghai.aliyuncs.com/Android/ubike_v1_1.apk")
+            img.singlelink(src='../img/Android.png')
       .tab(:style="{'min-height': height, 'min-width': width}")
         .space1
         .tabcontent(v-if="tab==1", :style="{'background-color': 'transparent'}")
@@ -170,6 +174,8 @@ block body
                 img(src='../img/qr_wx.png').qrbg
               .qrsingle
                 img(src='../img/qr_apple.png').qrbg
+              .qrsingle
+                img(src='../img/qr_android.png').qrbg
           .space_footer
         .c_c(v-show="tab==2")
           .c_c_c
